@@ -1,0 +1,25 @@
+{
+  "presets": [
+    "react"
+  ],
+  "env": {
+    "node": {
+      "presets": [
+        ["env", {
+          "targets": {
+            "node": "current"
+          }
+        }]
+      ]
+    },
+    "browser": {
+      "presets": [
+        ["env", {
+          "targets": {
+            "browsers": ["last 2 versions"]
+          }
+        }]
+      ]
+    }
+  }
+}
