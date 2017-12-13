@@ -1,7 +1,13 @@
 import React from 'react';
-import { render } from 'react-dom';
+import { hydrate } from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-console.log(123);
+import App from './App';
 
-render(<div>123</div>, document.getElementById('app'));
+hydrate(
+	<Router>
+		<App />
+	</Router>,
+	document.getElementById('app')
+);
 

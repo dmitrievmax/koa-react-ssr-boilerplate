@@ -3,16 +3,21 @@ module.exports = {
 		threshold: 2048
 	},
 	static: {
-		maxage: 86400000
+		maxage: 0
 	},
 	port: 3000,
-	pathToFavicon: '/public/favicon.ico',
 	middlewares: [
 		'favicon',
 		'compress',
 		'static',
 		'logger',
+		'pug',
 		'errors',
 		'bodyParser'
-	]
+	],
+	webpack: {
+		devServer: {
+			port: 8050
+		}
+	}
 };

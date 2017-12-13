@@ -1,7 +1,8 @@
 import Router from 'koa-router';
+import { ssrAction } from './controller';
 
 const router = new Router();
 
-router.get('/test', async (ctx) => ctx.body = '123sdf');
+router.get('/*', ssrAction);
 
 export default router.routes();

@@ -1,7 +1,5 @@
-import test from './test';
-import ssrRoutes from './ssrRoutes';
+import serverSideRendering from '../serverSideRendering';
 
 export default app => {
-	app.use(test);
-	app.use(ssrRoutes);
+	app.use(serverSideRendering);
 };
